@@ -1,25 +1,38 @@
+import {csv} from 'd3'
 import React from 'react';
-import logo from './logo.svg';
+import {useState, useEffect} from 'react'
 import './App.css';
+import {Home} from './components/Home'
+import {About} from './components/About'
+import {Products} from './components/Products'
+import { ProductDetail } from './components/ProductDetail';
+import { TheShoe } from './components/TheShoe';
+import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom';
+import {Header} from './components/Header/Header'
+import {fetchedData} from './components/data'
+import ReactImageZoom from 'react-image-zoom';
 
-function App() {
+const App = () => {
+  const props = {width: 400, height: 250, zoomWidth: 500, img: "1.jpg"};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+  <BrowserRouter>
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="products">Products</Link>
+  </nav>
+
+  <Header/>
+  <div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="products" element={<Products/>}>
+        <Route path="/" element={<ProductDetail/>}/>
+        <Route path=":shoe" element={<TheShoe/>}/>
+      </Route>
+    </Routes>
+  </div>
+  </BrowserRouter>
   );
 }
 

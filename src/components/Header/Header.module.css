@@ -1,0 +1,33 @@
+.header{
+    font-size: 12px;
+    line-height: 2;
+    box-shadow: inset -1px 0 0 0 #e5e5e5;
+    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    background: #fff !important;
+    width: 100%;
+    font-size: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.header ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+
+}
+.header ul li{
+    box-shadow: inset -1px 0 0 0 #e5e5e5;
+    padding-right: 28px;
+    padding-left: 28px;
+    font-size: 12px;
+    line-height: 2;
+}
+.rightTopBar{
+    float: right !important;
+}

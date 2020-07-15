@@ -10,9 +10,10 @@ export const TheShoe= () => {
         return <h1>Shoe not found</h1>
     }
     const {pImage,pPrice}=shoess;
-    return (
+    return (<>
         <h1>{pPrice}</h1>
         <h1>{pImage}</h1>
+        </>
     )
 }
 

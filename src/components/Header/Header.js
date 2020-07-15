@@ -1,4 +1,4 @@
-import MenuIcon from '@material-ui/icons/Menu';
+
 import React from 'react'
 import styles from './Header.module.css'
 import SearchAppBar from './navBar'

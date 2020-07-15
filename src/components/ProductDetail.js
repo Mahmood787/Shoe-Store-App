@@ -1,5 +1,4 @@
 import React from 'react'
-import { useParams } from 'react-router'
 import {Link} from 'react-router-dom'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -13,14 +12,12 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Grid } from '@material-ui/core';
-import ReactImageZoom from 'react-image-zoom';
- 
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -59,19 +56,18 @@ const useStyles = makeStyles((theme) => ({
         const handleExpandClick = () => {
           setExpanded(!expanded);
         };
-const props = {width: 400, height: 250, zoomWidth: 500, img: "1.jpg"};
          
     
       
       // card ends
     return (
-        
+      
       <Grid container   alignItems="center"   spacing={5}
       direction="row" justify="center" xs={12}>
           {Object.entries(data).map(([slug,{pImage,pPrice,}])=>(
               <Grid item sm={4}>
                   <Link to={`/products/${slug}`} >
-                  <ReactImageZoom {...props} />
+                    
                   <Card className={classes.root}>
             <CardHeader variant="h3" component="h2"
               avatar={

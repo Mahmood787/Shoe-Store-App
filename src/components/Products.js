@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, Outlet } from 'react-router'
+import { Outlet } from 'react-router'
 
 
 export const Products = () => {

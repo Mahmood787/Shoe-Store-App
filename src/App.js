@@ -23,7 +23,7 @@ const App = () => {
         <div className={styles.header}>
             <ul>
                 <li>Join Us</li>
-                <li> <img src={"https://www.nike.com/assets/experience/ciclp/static/v2/1289-42d68bca589/static/icons/jordan.svg"}></img></li>
+                <li> <img src={"https://www.nike.com/assets/experience/ciclp/static/v2/1289-42d68bca589/static/icons/jordan.svg"} alt="ok"></img></li>
                 <li>Awsome Shoes</li>
             </ul>
             <ul className={styles.rightTopBar}>

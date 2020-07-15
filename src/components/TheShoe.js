@@ -28,7 +28,7 @@ export const TheShoe= () => {
             <p> Lorum Ipsum ipsin a fdf Lorum Ipsum ipsin a fdfLorum Ipsum ipsin a fdfLorum Ipsum ipsin a fdf
             Lorum Ipsum ipsin a fdfLorum Ipsum ipsin a fdfLorum Ipsum ipsin a fdfLorum Ipsum ipsin a fdfLorum Ipsum ipsin a fdf
             </p>
-            <a href="#">Read more</a>
+            <a href="https://www.nike.com/ca/fr/w/together-we-fly-afaq8">Read more</a>
             <Grid container  justify="space-between">
                 <h4>Location :</h4>
                 <h4>Karachi</h4>

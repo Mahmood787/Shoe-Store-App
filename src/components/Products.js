@@ -6,15 +6,14 @@ export const Products = () => {
     
     return (
         <>
-        <div>
-            <h5>your Products</h5>
-        </div>
+        
         <hr/>
         <div style={{
         position: 'absolute', 
         left: '5%', 
         transform: 'translate(0%, 0%)',
-        marginTop:'20px'
+        marginTop:'20px',
+        width:'90%'
     }}>
             <Outlet/>
         </div>
